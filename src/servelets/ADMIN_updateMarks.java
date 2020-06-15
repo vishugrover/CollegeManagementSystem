@@ -21,6 +21,7 @@ public class ADMIN_updateMarks extends HttpServlet {
 		HttpSession session=request.getSession();
 		String uname=(String)session.getAttribute("uname");
 		String course=(String)session.getAttribute("course");
+		System.Out.Println("Hello");
 		try
 		{	
 			Connection con=ConnectionProvider.provideConnection();
